@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suara Warga - Platform Aspirasi Masyarakat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+
+<body class="bg-gray-50 font-inter text-gray-800 min-h-screen flex flex-col">
+    <!-- NAVBAR -->
+    <nav class="bg-red-700 text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white text-red-700 w-10 h-10 rounded-full flex items-center justify-center font-bold">SW
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">Suara Warga</h1>
+                    <p class="text-xs text-red-100">Platform Aspirasi Masyarakat</p>
+                </div>
+            </div>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#" onclick="showPage('home')" class="hover:text-red-200">Beranda</a>
+                <a href="#" onclick="showPage('aspirasi')" class="hover:text-red-200">Aspirasi</a>
+                <a href="#" onclick="showPage('submit')" class="hover:text-red-200">Ajukan</a>
+                <a href="#" onclick="showPage('tentang')" class="hover:text-red-200">Tentang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE WRAPPER -->
+    <main class="pt-20 flex-grow">
+        <section id="home" class="page active">
+            <!-- Hero -->
+            <div class="bg-gradient-to-r from-red-700 to-red-900 text-white text-center py-20 px-4">
+                <h1 class="text-5xl font-bold mb-4">Suara Anda, Masa Depan Kita</h1>
+                <p class="text-lg text-red-100 mb-8">Wadah digital aspirasi masyarakat berbasis nilai Pancasila Sila
+                    ke-4.</p>
+                <button onclick="showPage('submit')"
+                    class="bg-white text-red-700 px-6 py-3 rounded-lg font-semibold hover:bg-red-50 transition">
+                    Ajukan Aspirasi Sekarang
+                </button>
+            </div>
+
+            <!-- Statistik -->
+            <div class="container mx-auto px-4 -mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="stat-card text-red-700">248<br><span>Total Aspirasi</span></div>
+                <div class="stat-card text-green-600">156<br><span>Selesai</span></div>
+                <div class="stat-card text-blue-600">67<br><span>Dalam Proses</span></div>
+                <div class="stat-card text-yellow-600">25<br><span>Menunggu</span></div>
+            </div>
+        </section>
+
+        <!-- === ASPIRASI (LIST JSON) === -->
+        <section id="aspirasi" class="page">
+            <div class="container mx-auto px-4 py-10">
+                <h2 class="text-3xl font-bold mb-4">Semua Aspirasi Warga</h2>
+                <p class="text-gray-600 mb-8">Telusuri aspirasi warga berdasarkan kategori, lokasi, dan status.</p>
+                <div id="aspirasi-list" class="grid md:grid-cols-3 gap-6">
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Ajukan Aspirasi -->
+        <section id="submit" class="page">
+            <div class="container mx-auto px-4 py-10 max-w-2xl">
+                <h2 class="text-3xl font-bold mb-6">Ajukan Aspirasi Baru</h2>
+                <form id="aspirasi-form" class="space-y-6 bg-white p-8 rounded-xl shadow-md">
+                    <input id="judul" type="text" placeholder="Judul Aspirasi" class="input-field">
+                    <input id="lokasi" type="text" placeholder="Lokasi Aspirasi" class="input-field">
+                    <select id="kategori" class="input-field">
+                        <option value="">Pilih Kategori</option>
+                        <option>Infrastruktur</option>
+                        <option>Lingkungan</option>
+                        <option>Sosial</option>
+                    </select>
+
+                    <textarea id="deskripsi" placeholder="Deskripsi Masalah" rows="4" class="input-field"></textarea>
+
+                    <button type="submit"
+                        class="bg-red-700 w-full text-white py-3 rounded-lg font-semibold hover:bg-red-800">
+                        Kirim Aspirasi
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- Tentang -->
+        <section id="tentang" class="page">
+            <div class="container mx-auto px-4 py-10 max-w-3xl">
+                <h2 class="text-3xl font-bold mb-6">Tentang Suara Warga</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Suara Warga adalah platform digital berbasis partisipasi masyarakat yang mengutamakan prinsip
+                    transparansi, gotong royong, dan musyawarah.
+                    Melalui platform ini, warga dapat menyampaikan aspirasi, mendukung usulan warga lain, serta memantau
+                    perkembangan penanganan secara terbuka.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-red-800 text-white py-6 text-center text-sm mt-10">
+        © 2025 Suara Warga • Dibangun dengan ❤️ untuk masyarakat Indonesia
+    </footer>
+
+
+    <script src="assets/index.js"></script>
+</body>
+
+</html>

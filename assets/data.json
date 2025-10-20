@@ -1,0 +1,45 @@
+{
+    "aspirasi": [
+      {
+        "id": 1,
+        "judul": "Perbaikan Jalan RT 05",
+        "kategori": "Infrastruktur",
+        "deskripsi": "Jalan utama RT 05 mengalami kerusakan parah yang mengganggu aktivitas warga.",
+        "status": "Selesai",
+        "lokasi": "RT 05, RW 03",
+        "dukungan": 342,
+        "tanggal": "2025-10-19"
+      },
+      {
+        "id": 2,
+        "judul": "Pembangunan Taman Bermain Anak",
+        "kategori": "Lingkungan",
+        "deskripsi": "Usulan pembangunan taman bermain anak di area lapangan RW 02 agar anak-anak memiliki ruang bermain aman.",
+        "status": "Dalam Proses",
+        "lokasi": "RW 02",
+        "dukungan": 189,
+        "tanggal": "2025-10-15"
+      },
+      {
+        "id": 3,
+        "judul": "Penerangan Jalan di RT 07",
+        "kategori": "Keamanan",
+        "deskripsi": "Beberapa area di RT 07 masih gelap di malam hari, diusulkan pemasangan lampu jalan tambahan.",
+        "status": "Menunggu",
+        "lokasi": "RT 07, RW 04",
+        "dukungan": 156,
+        "tanggal": "2025-10-10"
+      },
+      {
+        "id": 4,
+        "judul": "Program Posyandu Lansia",
+        "kategori": "Sosial",
+        "deskripsi": "Usulan untuk mengadakan posyandu lansia rutin setiap bulan agar kesehatan warga lanjut usia terpantau.",
+        "status": "Dalam Proses",
+        "lokasi": "RW 01",
+        "dukungan": 98,
+        "tanggal": "2025-10-05"
+      }
+    ]
+  }
+  
